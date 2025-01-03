@@ -8,5 +8,17 @@ When I first downloaded the dataset, I noticed immediately that:
 1) There were some empty cells in the Age, Cabin and Embarked Columns
 2) The values in the Survived Column were in 0s and 1s instead of Yes or No which could be ambiguous when visualized on a dashboard (same for Embarked column where all the port names were in single letters instead of their full names)
 
-Solution:
-1) Empty cells: Find & Replace
+Solution: Find & Replace
+1) Empty cells
+- Age: For rows with no specific age identified, ages are labelled as 0 so that their ages will not affect the calculation of average age of all passengers.
+- Cabin: If a passenger does not have a cabin, the cell value is listed as '-' instead (For standardization; this column was not used in the dashboard)
+- Embarked: For passengers with empty cell values under this column, their boarding locations were classified as 'Unidentified'.
+
+2) Ambiguous Data Types
+- Survived: Instead of 0s and 1s, I replaced the values with 'Yes' or 'No'. E.g. A value of 1 means that the passenger survived while a value of 0 means that the passenger died.
+- Embarked: I used the full name of the starting location instead of the short letter abbreviation.
+
+After cleaning the dataset, I proceeded with the data visualization on Power BI.
+
+# Data Visualization (Tools used: Power BI)
+Since I had an initial idea of analysing the losses and casualties, 
