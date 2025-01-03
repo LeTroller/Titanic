@@ -3,6 +3,7 @@ Hi guys, I'm back again with another one of my personal projects! Now you guys m
 
 # Data Cleaning (Tools used: Excel)
 Original Dataset: https://docs.google.com/spreadsheets/d/1SF7_RQi8nxf6ppd8cp2ZYh-BCwGVqp4QKf0ze0eUyT8/edit?ref=hackernoon.com&gid=116838508#gid=116838508 (Cleaned Dataset will be included in the repository)
+
 When I first downloaded the dataset, I noticed immediately that:
 1) There were some empty cells in the Age, Cabin and Embarked Columns
 2) The values in the Survived Column were in 0s and 1s instead of Yes or No which could be ambiguous when visualized on a dashboard (same for Embarked column where all the port names were in single letters instead of their full names)
